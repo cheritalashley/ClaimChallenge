@@ -1,0 +1,38 @@
+//Cherita Lashley
+ 
+//December 19, 2016
+ 
+//Program that checks if a number is odd or even
+ 
+
+#include <iostream>
+
+#include <vector>
+
+#include <string>
+
+#include <fstream>
+
+
+using namespace std;
+
+
+
+int main()
+{
+	
+int myNumber=3;
+
+    
+if (myNumber%2==0)
+    
+	cout<<myNumber << " is Even"<<endl;
+    
+else
+    
+	cout<<myNumber << " is Odd"<<endl;
+
+	
+return 0;
+
+}

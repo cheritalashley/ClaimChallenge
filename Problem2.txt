@@ -1,0 +1,78 @@
+//Cherita Lashley
+ 
+//December 20, 2016
+ 
+// 1-check to see if number is odd or even
+ 
+// 2-check to see if that variable is divisible by 3, 5, or both.
+ 
+
+
+#include <iostream>
+
+#include <vector>
+
+#include <string>
+
+#include <fstream>
+
+
+
+using namespace std;
+
+
+
+
+int main() 
+{
+	
+	int myNumber = 3;
+    
+	int sum=0;
+    
+
+    
+	cout << "My number is " << myNumber << endl;
+    
+    
+
+	if (myNumber%2==0)
+    
+	cout<<myNumber << " is Even"<<endl;
+    
+	else
+    
+	cout<<myNumber << " is Odd"<<endl;
+    
+    
+
+	if(myNumber%5==0) 
+    
+	cout<<"My number is Divisible by 5" << endl; 
+    
+    
+	
+	while (myNumber >0)
+    	
+	{
+		sum += myNumber%10;
+    	
+		myNumber = myNumber/10;
+    	
+	}
+   
+    
+
+	if ((sum==3) || (sum==6) || (sum==9))
+    
+	cout<< "My number is Divisible by 3"<<endl;
+    
+	else 
+    
+	cout<< "My number is not Divisible by 3 or 5"<<endl;
+    
+    
+	
+	return 0;
+
+}

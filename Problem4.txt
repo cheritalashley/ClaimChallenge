@@ -1,0 +1,68 @@
+//Cherita Lashley
+
+//December 21, 2016
+
+//Prints out the value of the sum of all multiples of 3 or 5 below 1000
+
+
+
+#include <iostream>
+
+
+
+using namespace std;
+
+
+
+int main() 
+{
+	
+	int myNumber1 = 5;
+	
+	int myNumber2 = 3;
+    
+	int counter1=1;
+    
+	int counter2=1;
+   
+	int sum1=1;
+    
+	int sum2=1;
+    
+    
+
+	while (sum1 <995)
+    
+	{
+    
+		sum1 = myNumber1*counter1;
+    
+		cout << sum1 << ", ";
+    
+		counter1=counter1+1;
+    
+	}
+    
+    
+
+	cout << endl;
+    
+    
+
+	while (sum2 <999)
+    
+	{
+    
+		sum2 = myNumber2*counter2;
+    
+		cout << sum2 << ", ";
+    
+		counter2=counter2+1;
+    
+	}
+    
+	
+
+return 0;
+
+}

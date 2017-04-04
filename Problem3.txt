@@ -1,0 +1,136 @@
+//Cherita Lashley
+
+//December 20, 2016
+
+// 1-check to see if number is odd or even
+
+// 2-check to see if that variable is divisible by 3, 5, or both.
+
+/* 3-output a new string where every number is changed into its written form (e.g. "3" becomes "three"),
+  
+unless the result is that the number evaluated is indivisible by 3 or 5, 
+  
+in which case, change the output string to 
+  "Indivisible, with Liberty and Justice for All"*/
+
+
+#include <iostream>
+
+#include <vector>
+
+#include <string>
+
+#include <fstream>
+
+
+
+using namespace std;
+
+
+
+int main() 
+{
+	
+
+int myNumber = 3;
+    
+int sum=0;
+    
+int leftNumber;
+    
+int rightNumber;
+    
+    
+
+cout << "My number is " << myNumber << endl;
+    
+    
+
+string ones[]={"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
+                    
+"Ten","Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen",
+                    
+"Eighteen", "Nineteen"};
+    
+    
+
+string tens[]={"Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+    
+    
+
+if (myNumber%2==0)
+
+{    
+	cout<<myNumber << " is Even"<<endl;
+    
+}else
+    
+	cout<<myNumber << " is Odd"<<endl;
+    
+    
+
+if(myNumber%5==0) 
+  
+{  
+	cout<<"My number is Divisible by 5" << endl; 
+    
+    
+}
+
+if (myNumber <= 0 || myNumber >= 100)
+   
+{
+        
+	cout << "The number is not between 1-99:" << endl;
+   
+}
+    
+
+else if (myNumber >=1 && myNumber <=19)
+    
+{
+        
+	cout << "The number is " << ones[myNumber] << endl;
+    
+}
+     
+
+else if (myNumber >= 20 && myNumber <= 99)
+    
+{
+       
+	leftNumber = myNumber/10;
+        
+	rightNumber = myNumber%10;
+        
+	cout << "The number is "<<tens[leftNumber-2] << " "
+<<ones[rightNumber]<<endl;
+    
+}
+    
+   
+
+ while (myNumber >0)
+    	
+{	
+	sum += myNumber%10;
+    	
+	myNumber = myNumber/10;
+    	
+}
+   
+    
+
+if ((sum==3) || (sum==6) || (sum==9))
+    
+	cout<< "My number is Divisible by 3"<<endl;
+    
+else 
+    
+	cout<< "Indivisible, with Liberty and Justice for All"<<endl;
+    
+	
+
+return 0;
+
+}
